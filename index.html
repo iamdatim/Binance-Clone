@@ -5,13 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binance Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
 </head>
 
 <style>
+
+    body{
+        margin: 0;
+    }
     #nav-bar{
         height: 56px;
         background-color: rgb(43, 49, 57);
-        margin: 0;
+        display: block;
+    
+    }
+
+    #text1{
+        color: white;
+        font-size: 15px;
+        font-family: Golos Text, Arial;
+        line-height: 24px;
+    }
+
+    #text2{
+        color: rgb(201, 148, 0);
+        font-size: 15px;
+        font-family: Golos Text, Arial;
+        line-height: 24px;
+    }
+    
+    #text3{
+        color: white;
+        font-size: 15px;
+        font-family: Golos Text, Arial;
+        line-height: 24px;
+    }
+
+    #div-button{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #nav-continue-button{
+        background-color: #474D57;
+        border: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 14px;
+        padding-right: 14px;
+        border-radius: 5px;
+        color: white;
+    
+        
+    }
+
+    .nav-svg{
+        height: 20px;
+        padding-top: 3px;
+    }
+
+    #nav-text-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        /* text-align: center; */
+        -webkit-box-align: center;
+
     }
 </style>
 <body>
@@ -19,6 +81,30 @@
 <div id="parent">
     <div id="nav-bar">
 
+        <div id="nav-text-div">
+            
+            <div id="span-div">
+                <span id="text1">
+                    To see content specific to your location, we suggest
+                </span>
+                <span id="text2">
+                    Nigeria
+                </span>
+        
+                <span id="text3">
+                    as your preferred country/region.
+                </span>
+            </div>
+
+            <div id="div-button">
+                <input id="nav-continue-button" type="button" id="nav-button" value="Continue">
+            </div>
+
+            <div id="svg-div">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="nav-svg"><path fill="#858585" d="M13.4 12l6.6 6.6-1.4 1.4-6.6-6.6L5.4 20 4 18.6l6.6-6.6L4 5.4 5.4 4l6.6 6.6L18.6 4 20 5.4 13.4 12z" fill="currentColor"></path></svg>
+            </div>
+        </div>
+        
     </div>
 </div>
 
