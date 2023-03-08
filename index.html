@@ -12,6 +12,10 @@
 
 <style>
 
+    *{
+        margin: 0;
+        font-family: Arial;
+    }
     body{
         margin: 0;
     }
@@ -80,8 +84,94 @@
         height: 24px;
     }
 
-    .css-mykl4n{
-        height: auto;
+    #app-icon{
+        height: 24px;
+    }
+
+    #nav-bar{
+        display: flex;
+    }
+
+    #app-dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ffffff;}
+
+    /* Show the dropdown menu on hover */
+    #app-dropdown:hover .dropdown-content {display: block;}
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    #app-dropdown:hover #app-icon {background-color: rgb(201, 148, 0);}
+
+    #na1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-radius: 10px;
+        /* margin-top: 10px; */
+        margin-left: 25px;
+        width: max-content;
+    }
+
+    #nav1-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10px;
+    }
+
+    #na1:hover{
+        background-color: #dddddd;
+        display: ;
+    }
+
+    #exchange-div{
+        /* display: flex; */
+        /* width: max-content; */
+        
+
+    }
+
+    #p1{
+        margin-left: 20px;
+    }
+    
+    .para1{
+        font-size: 12px;
+        font-family: Arial;
+    }
+
+    #exchange-icon{
+        margin-top: 3px;
+    }
+
+    #exchange-arrow{
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .arrow{
+        display: none;
     }
 
 </style>
@@ -121,8 +211,204 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5120 1024" class="css-4fx19t"><path fill="#F0B90B" d="M230.997333 512L116.053333 626.986667 0 512l116.010667-116.010667L230.997333 512zM512 230.997333l197.973333 197.973334 116.053334-115.968L512 0 197.973333 314.026667l116.053334 115.968L512 230.997333z m395.989333 164.992L793.002667 512l116.010666 116.010667L1024.981333 512l-116.992-116.010667zM512 793.002667l-197.973333-198.997334-116.053334 116.010667L512 1024l314.026667-314.026667-116.053334-115.968L512 793.002667z m0-165.973334l116.010667-116.053333L512 396.032 395.989333 512 512 626.986667z m1220.010667 11.946667v-1.962667c0-75.008-40.021333-113.024-105.002667-138.026666 39.978667-21.973333 73.984-58.026667 73.984-121.002667v-1.962667c0-88.021333-70.997333-145.024-185.002667-145.024h-260.992v561.024h267.008c126.976 0.981333 210.005333-51.029333 210.005334-153.002666z m-154.026667-239.957333c0 41.984-34.005333 58.965333-89.002667 58.965333h-113.962666V338.986667h121.984c52.010667 0 80.981333 20.992 80.981333 58.026666v2.005334z m31.018667 224c0 41.984-32.981333 61.013333-87.04 61.013333h-146.944v-123.050667h142.976c63.018667 0 91.008 23.04 91.008 61.013334v1.024z m381.994666 169.984V230.997333h-123.989333v561.024h123.989333v0.981334z m664.021334 0V230.997333h-122.026667v346.026667l-262.997333-346.026667h-114.005334v561.024h122.026667v-356.010666l272 356.992h104.96z m683.946666 0L3098.026667 228.010667h-113.962667l-241.024 564.992h127.018667l50.986666-125.994667h237.013334l50.986666 125.994667h130.005334z m-224.981333-235.008h-148.992l75.008-181.973334 73.984 181.973334z m814.037333 235.008V230.997333h-122.026666v346.026667l-262.997334-346.026667h-114.005333v561.024h122.026667v-356.010666l272 356.992h104.96z m636.970667-91.008l-78.976-78.976c-44.032 39.978667-83.029333 65.962667-148.010667 65.962666-96 0-162.986667-80-162.986666-176v-2.986666c0-96 67.968-174.976 162.986666-174.976 55.978667 0 100.010667 23.978667 144 62.976l78.976-91.008c-51.968-50.986667-114.986667-86.997333-220.970666-86.997334-171.989333 0-292.992 130.986667-292.992 290.005334V512c0 160.981333 122.965333 288.981333 288 288.981333 107.989333 1.024 171.989333-36.992 229.973333-98.986666z m527.018667 91.008v-109.994667h-305.024v-118.016h265.002666v-109.994667h-265.002666V340.992h301.013333V230.997333h-422.997333v561.024h427.008v0.981334z" p-id="2935"></path></svg>
         </div>
     
-        <div id="app-div">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="css-mykl4n"><use xlink:href="#icon-h-top-menu-s"></use></svg>
+        <div id="app-dropdown">
+            <img id="app-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABj0lEQVR4nO3cUWrbQBQFUH9J9+2h+QzdezDdWSHxBlyUFEqdOPFohOzI58B8mifmzUjy+OLdDgAAAAA+keQh47iv5FDJ8YtxyDj+Gobh59xJzcbrzbm43xdc2H/j9TNVP9Tr9HdlHGeNcXxSr9OF2/LceFGvU8fkvw71OmlAFl1gGnDlBdbMDogG1IaeOc3sgGhA2QFeQ+uKt6DZX8SSPKvXaTp4mt2Acdyr12k69Zt7GDcMw6N6C5hONaeDtels55Lzn2nlz5n8e6kHAAAAAHeb1Yxs6P1kUZvJhmbR7Gsz2dB8+tvAGg049gz1OmlAFl1gGnDlBdbMDogG1IaeOc3sgGhA2QFeQ+uKtyDZ0CyXfW0mG5pFs6/NZENz9jButXji1rOaJRsKAAAAwK3YelYzsqH/yIaekA3N+d0nG5p3vw3sbjz72kwsJWIpJZYillKScRFNXCM7WStnNWVDT2jAnU1IrVyv2dYnpL5BA2RD8/Hky4bm+/1PaTPZ0JybfNnQepsM2VAAAAAAdrfoD66TUvAmDYrPAAAAAElFTkSuQmCC">
+                <div class="dropdown-content">
+
+                    <div id="nav1-grid">
+                        <div id="na1">
+
+                            <div id="exchange-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nM2XXWhbZRjHz0S928CJWpvkJGmzxW4NKNg5ZQNvFBQRdEwQsd6JThhjm6AOP+Y6tlYFO+kQmXiliIVd+NFd5ZzkvOc9DVnarVs/1nWta5d+ZFvn2pyT836kfeSkOem6ZGnapOIf/oSci/zyvDzP/32OIPzfBSCsI2H3D0yt5tan9d16zrXaVo6dhGu1bfazioqGHc06CiQvSJ9DEgV0ilwtc8h9mEUbdDJ1Bnj0WZ2r3uMVhTLFuSel+Iwe6TB0Bb+CHukImKiGss46ShJBMKe7gSRCwCIBI62591UEylXXqwR5U73SoQzU8pC8B1inH8jk7xmobTLZAQz7Ulx17Cqz0seeocit98sf5qD98gFg2iYg8V+WQHMePw1Mq9EZenzHqqCgVG1hyDVzWf4gB7WqptgPZPRkYahd+bWfgGueWao9GlgZVHVVU8WVGJHfmbOhlpN4G9ArTUWhOfjw13Nc8ySs3yoNGtm4gSFxaCz0Br8Talm3wMPNJYHpyDeQ1tzAtU0Eog+5ikN7tzxIsahNhV8kd0Mt98kfA8WbgYydKl7t6PfAIwEwJ2JA+/ZZcB06fBsKQ0G4j6ruP6bDO4wuqSUPantA2g9U8wMZby8MHf8VeKQOUvEQGNO3wZi+BaznLeCabwpAuD8PTJB4clZ5Su8OHr8ndHGc3gem1QGZ/POucfoLeKQezNHTWWjWN28A63p5nmu1g0ugTHEdSqEn9PPBpmWhtkdDjUAjTwK5bgeIDDz6NJDhH5dCs07diAOPbp+fUz1nMtA0dr5pKjWGFYWlQm1PhF8DenYnmNcR8NhOoIPHCkJz8MQg8M564KqzVaDIeWtAPrBi6IJbYEZ9Dljv28DO7y4KNWx4PARMrZkXqCreHJD3rxo8mwE3Aju3q3QwrpkX0ppjN1G9+kXpszKOWgUeex7IpSPLHPXlxaPONFfIsddAft26dVbeXFLuduLRbUCutBVtrjT2dCzpbIrdJ5JKwDgnHStjnDoWxulqe/44xV7KH6dsgKyjyN3+j7Ld6A42lxEgvy0EyDWptACxBDHhAaqIKBF+wSwYmdJHpUXm2KlM5amJ6GJkqv71QjGB+vB6hsRL8dDrtKxL4u9W4NgLXNtMILLRWRSagytVj1Akjo/IjQWuxaNrcy3aAs3po8h1e0h+L28RoFfbll0EGPbOQGdVnbAaMVzVQJFo3Bkw/dLB7Orz872bC3uNVa8+tjiufoUgT6pP+uS/W/ZsMeR410Q+/ULwiwy4J/glENVL8tfbej2Nxb1CJcWxs0lH9cmL0qego606x+JRa6HnZxuSa7bQC1kR1fMdQw6TIO+J3B+K1H7Lscuka/UKU2n9C9igBj5ULrcFAAAAAElFTkSuQmCC">
+                            </div>
+                            <div id="exchange-div">
+                                <div id="p1">
+                                    <p>Exchange</p>
+                                    <p class="para1">Blockchain and crypto asset exchange</p>
+                                </div>
+                            
+                            </div>
+    
+                            <div id="exchange-arrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                            </div>
+    
+                        </div>
+    
+                        <div id="na1">
+    
+                            <div id="exchange-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nM2XXWhbZRjHz0S928CJWpvkJGmzxW4NKNg5ZQNvFBQRdEwQsd6JThhjm6AOP+Y6tlYFO+kQmXiliIVd+NFd5ZzkvOc9DVnarVs/1nWta5d+ZFvn2pyT836kfeSkOem6ZGnapOIf/oSci/zyvDzP/32OIPzfBSCsI2H3D0yt5tan9d16zrXaVo6dhGu1bfazioqGHc06CiQvSJ9DEgV0ilwtc8h9mEUbdDJ1Bnj0WZ2r3uMVhTLFuSel+Iwe6TB0Bb+CHukImKiGss46ShJBMKe7gSRCwCIBI62591UEylXXqwR5U73SoQzU8pC8B1inH8jk7xmobTLZAQz7Ulx17Cqz0seeocit98sf5qD98gFg2iYg8V+WQHMePw1Mq9EZenzHqqCgVG1hyDVzWf4gB7WqptgPZPRkYahd+bWfgGueWao9GlgZVHVVU8WVGJHfmbOhlpN4G9ArTUWhOfjw13Nc8ySs3yoNGtm4gSFxaCz0Br8Talm3wMPNJYHpyDeQ1tzAtU0Eog+5ikN7tzxIsahNhV8kd0Mt98kfA8WbgYydKl7t6PfAIwEwJ2JA+/ZZcB06fBsKQ0G4j6ruP6bDO4wuqSUPantA2g9U8wMZby8MHf8VeKQOUvEQGNO3wZi+BaznLeCabwpAuD8PTJB4clZ5Su8OHr8ndHGc3gem1QGZ/POucfoLeKQezNHTWWjWN28A63p5nmu1g0ugTHEdSqEn9PPBpmWhtkdDjUAjTwK5bgeIDDz6NJDhH5dCs07diAOPbp+fUz1nMtA0dr5pKjWGFYWlQm1PhF8DenYnmNcR8NhOoIPHCkJz8MQg8M564KqzVaDIeWtAPrBi6IJbYEZ9Dljv28DO7y4KNWx4PARMrZkXqCreHJD3rxo8mwE3Aju3q3QwrpkX0ppjN1G9+kXpszKOWgUeex7IpSPLHPXlxaPONFfIsddAft26dVbeXFLuduLRbUCutBVtrjT2dCzpbIrdJ5JKwDgnHStjnDoWxulqe/44xV7KH6dsgKyjyN3+j7Ld6A42lxEgvy0EyDWptACxBDHhAaqIKBF+wSwYmdJHpUXm2KlM5amJ6GJkqv71QjGB+vB6hsRL8dDrtKxL4u9W4NgLXNtMILLRWRSagytVj1Akjo/IjQWuxaNrcy3aAs3po8h1e0h+L28RoFfbll0EGPbOQGdVnbAaMVzVQJFo3Bkw/dLB7Orz872bC3uNVa8+tjiufoUgT6pP+uS/W/ZsMeR410Q+/ULwiwy4J/glENVL8tfbej2Nxb1CJcWxs0lH9cmL0qego606x+JRa6HnZxuSa7bQC1kR1fMdQw6TIO+J3B+K1H7Lscuka/UKU2n9C9igBj5ULrcFAAAAAElFTkSuQmCC">
+                            </div>
+                            <div id="exchange-div">
+                                <div id="p1">
+                                    <p>Academy</p>
+                                    <p class="para1">Blockchain and Crypto Education</p>
+                                </div>
+                            
+                            </div>
+    
+                            <div id="exchange-arrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                            </div>
+    
+                        </div>
+    
+                        <div id="na1">
+    
+                            <div id="exchange-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nM2XXWhbZRjHz0S928CJWpvkJGmzxW4NKNg5ZQNvFBQRdEwQsd6JThhjm6AOP+Y6tlYFO+kQmXiliIVd+NFd5ZzkvOc9DVnarVs/1nWta5d+ZFvn2pyT836kfeSkOem6ZGnapOIf/oSci/zyvDzP/32OIPzfBSCsI2H3D0yt5tan9d16zrXaVo6dhGu1bfazioqGHc06CiQvSJ9DEgV0ilwtc8h9mEUbdDJ1Bnj0WZ2r3uMVhTLFuSel+Iwe6TB0Bb+CHukImKiGss46ShJBMKe7gSRCwCIBI62591UEylXXqwR5U73SoQzU8pC8B1inH8jk7xmobTLZAQz7Ulx17Cqz0seeocit98sf5qD98gFg2iYg8V+WQHMePw1Mq9EZenzHqqCgVG1hyDVzWf4gB7WqptgPZPRkYahd+bWfgGueWao9GlgZVHVVU8WVGJHfmbOhlpN4G9ArTUWhOfjw13Nc8ySs3yoNGtm4gSFxaCz0Br8Talm3wMPNJYHpyDeQ1tzAtU0Eog+5ikN7tzxIsahNhV8kd0Mt98kfA8WbgYydKl7t6PfAIwEwJ2JA+/ZZcB06fBsKQ0G4j6ruP6bDO4wuqSUPantA2g9U8wMZby8MHf8VeKQOUvEQGNO3wZi+BaznLeCabwpAuD8PTJB4clZ5Su8OHr8ndHGc3gem1QGZ/POucfoLeKQezNHTWWjWN28A63p5nmu1g0ugTHEdSqEn9PPBpmWhtkdDjUAjTwK5bgeIDDz6NJDhH5dCs07diAOPbp+fUz1nMtA0dr5pKjWGFYWlQm1PhF8DenYnmNcR8NhOoIPHCkJz8MQg8M564KqzVaDIeWtAPrBi6IJbYEZ9Dljv28DO7y4KNWx4PARMrZkXqCreHJD3rxo8mwE3Aju3q3QwrpkX0ppjN1G9+kXpszKOWgUeex7IpSPLHPXlxaPONFfIsddAft26dVbeXFLuduLRbUCutBVtrjT2dCzpbIrdJ5JKwDgnHStjnDoWxulqe/44xV7KH6dsgKyjyN3+j7Ld6A42lxEgvy0EyDWptACxBDHhAaqIKBF+wSwYmdJHpUXm2KlM5amJ6GJkqv71QjGB+vB6hsRL8dDrtKxL4u9W4NgLXNtMILLRWRSagytVj1Akjo/IjQWuxaNrcy3aAs3po8h1e0h+L28RoFfbll0EGPbOQGdVnbAaMVzVQJFo3Bkw/dLB7Orz872bC3uNVa8+tjiufoUgT6pP+uS/W/ZsMeR410Q+/ULwiwy4J/glENVL8tfbej2Nxb1CJcWxs0lH9cmL0qego606x+JRa6HnZxuSa7bQC1kR1fMdQw6TIO+J3B+K1H7Lscuka/UKU2n9C9igBj5ULrcFAAAAAElFTkSuQmCC">
+                            </div>
+                            <div id="exchange-div">
+                                <div id="p1">
+                                    <p>Learn & Earn</p>
+                                    <p class="para1">Earn free crypto through learning</p>
+                                </div>
+                            
+                            </div>
+    
+                            <div id="exchange-arrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                            </div>
+    
+                        </div>
+                         
+                        <div id="na1">
+    
+                            <div id="exchange-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nM2XXWhbZRjHz0S928CJWpvkJGmzxW4NKNg5ZQNvFBQRdEwQsd6JThhjm6AOP+Y6tlYFO+kQmXiliIVd+NFd5ZzkvOc9DVnarVs/1nWta5d+ZFvn2pyT836kfeSkOem6ZGnapOIf/oSci/zyvDzP/32OIPzfBSCsI2H3D0yt5tan9d16zrXaVo6dhGu1bfazioqGHc06CiQvSJ9DEgV0ilwtc8h9mEUbdDJ1Bnj0WZ2r3uMVhTLFuSel+Iwe6TB0Bb+CHukImKiGss46ShJBMKe7gSRCwCIBI62591UEylXXqwR5U73SoQzU8pC8B1inH8jk7xmobTLZAQz7Ulx17Cqz0seeocit98sf5qD98gFg2iYg8V+WQHMePw1Mq9EZenzHqqCgVG1hyDVzWf4gB7WqptgPZPRkYahd+bWfgGueWao9GlgZVHVVU8WVGJHfmbOhlpN4G9ArTUWhOfjw13Nc8ySs3yoNGtm4gSFxaCz0Br8Talm3wMPNJYHpyDeQ1tzAtU0Eog+5ikN7tzxIsahNhV8kd0Mt98kfA8WbgYydKl7t6PfAIwEwJ2JA+/ZZcB06fBsKQ0G4j6ruP6bDO4wuqSUPantA2g9U8wMZby8MHf8VeKQOUvEQGNO3wZi+BaznLeCabwpAuD8PTJB4clZ5Su8OHr8ndHGc3gem1QGZ/POucfoLeKQezNHTWWjWN28A63p5nmu1g0ugTHEdSqEn9PPBpmWhtkdDjUAjTwK5bgeIDDz6NJDhH5dCs07diAOPbp+fUz1nMtA0dr5pKjWGFYWlQm1PhF8DenYnmNcR8NhOoIPHCkJz8MQg8M564KqzVaDIeWtAPrBi6IJbYEZ9Dljv28DO7y4KNWx4PARMrZkXqCreHJD3rxo8mwE3Aju3q3QwrpkX0ppjN1G9+kXpszKOWgUeex7IpSPLHPXlxaPONFfIsddAft26dVbeXFLuduLRbUCutBVtrjT2dCzpbIrdJ5JKwDgnHStjnDoWxulqe/44xV7KH6dsgKyjyN3+j7Ld6A42lxEgvy0EyDWptACxBDHhAaqIKBF+wSwYmdJHpUXm2KlM5amJ6GJkqv71QjGB+vB6hsRL8dDrtKxL4u9W4NgLXNtMILLRWRSagytVj1Akjo/IjQWuxaNrcy3aAs3po8h1e0h+L28RoFfbll0EGPbOQGdVnbAaMVzVQJFo3Bkw/dLB7Orz872bC3uNVa8+tjiufoUgT6pP+uS/W/ZsMeR410Q+/ULwiwy4J/glENVL8tfbej2Nxb1CJcWxs0lH9cmL0qego606x+JRa6HnZxuSa7bQC1kR1fMdQw6TIO+J3B+K1H7Lscuka/UKU2n9C9igBj5ULrcFAAAAAElFTkSuQmCC">
+                            </div>
+                            <div id="exchange-div">
+                                <div id="p1">
+                                    <p>Charity</p>
+                                    <p class="para1">Powering blockchain for good</p>
+                                </div>
+                            
+                            </div>
+    
+                            <div id="exchange-arrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                            </div>
+    
+                        </div>
+
+                        <div id="na1">
+    
+                            <div id="exchange-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nM2XXWhbZRjHz0S928CJWpvkJGmzxW4NKNg5ZQNvFBQRdEwQsd6JThhjm6AOP+Y6tlYFO+kQmXiliIVd+NFd5ZzkvOc9DVnarVs/1nWta5d+ZFvn2pyT836kfeSkOem6ZGnapOIf/oSci/zyvDzP/32OIPzfBSCsI2H3D0yt5tan9d16zrXaVo6dhGu1bfazioqGHc06CiQvSJ9DEgV0ilwtc8h9mEUbdDJ1Bnj0WZ2r3uMVhTLFuSel+Iwe6TB0Bb+CHukImKiGss46ShJBMKe7gSRCwCIBI62591UEylXXqwR5U73SoQzU8pC8B1inH8jk7xmobTLZAQz7Ulx17Cqz0seeocit98sf5qD98gFg2iYg8V+WQHMePw1Mq9EZenzHqqCgVG1hyDVzWf4gB7WqptgPZPRkYahd+bWfgGueWao9GlgZVHVVU8WVGJHfmbOhlpN4G9ArTUWhOfjw13Nc8ySs3yoNGtm4gSFxaCz0Br8Talm3wMPNJYHpyDeQ1tzAtU0Eog+5ikN7tzxIsahNhV8kd0Mt98kfA8WbgYydKl7t6PfAIwEwJ2JA+/ZZcB06fBsKQ0G4j6ruP6bDO4wuqSUPantA2g9U8wMZby8MHf8VeKQOUvEQGNO3wZi+BaznLeCabwpAuD8PTJB4clZ5Su8OHr8ndHGc3gem1QGZ/POucfoLeKQezNHTWWjWN28A63p5nmu1g0ugTHEdSqEn9PPBpmWhtkdDjUAjTwK5bgeIDDz6NJDhH5dCs07diAOPbp+fUz1nMtA0dr5pKjWGFYWlQm1PhF8DenYnmNcR8NhOoIPHCkJz8MQg8M564KqzVaDIeWtAPrBi6IJbYEZ9Dljv28DO7y4KNWx4PARMrZkXqCreHJD3rxo8mwE3Aju3q3QwrpkX0ppjN1G9+kXpszKOWgUeex7IpSPLHPXlxaPONFfIsddAft26dVbeXFLuduLRbUCutBVtrjT2dCzpbIrdJ5JKwDgnHStjnDoWxulqe/44xV7KH6dsgKyjyN3+j7Ld6A42lxEgvy0EyDWptACxBDHhAaqIKBF+wSwYmdJHpUXm2KlM5amJ6GJkqv71QjGB+vB6hsRL8dDrtKxL4u9W4NgLXNtMILLRWRSagytVj1Akjo/IjQWuxaNrcy3aAs3po8h1e0h+L28RoFfbll0EGPbOQGdVnbAaMVzVQJFo3Bkw/dLB7Orz872bC3uNVa8+tjiufoUgT6pP+uS/W/ZsMeR410Q+/ULwiwy4J/glENVL8tfbej2Nxb1CJcWxs0lH9cmL0qego606x+JRa6HnZxuSa7bQC1kR1fMdQw6TIO+J3B+K1H7Lscuka/UKU2n9C9igBj5ULrcFAAAAAElFTkSuQmCC">
+                            </div>
+                            <div id="exchange-div">
+                                <div id="p1">
+                                    <p>Cloud</p>
+                                    <p class="para1">Enterprise exchange solutions</p>
+                                </div>
+                            
+                            </div>
+    
+                            <div id="exchange-arrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                            </div>
+    
+                        </div>
+
+                        <div id="na1">
+    
+                            <div id="exchange-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nM2XXWhbZRjHz0S928CJWpvkJGmzxW4NKNg5ZQNvFBQRdEwQsd6JThhjm6AOP+Y6tlYFO+kQmXiliIVd+NFd5ZzkvOc9DVnarVs/1nWta5d+ZFvn2pyT836kfeSkOem6ZGnapOIf/oSci/zyvDzP/32OIPzfBSCsI2H3D0yt5tan9d16zrXaVo6dhGu1bfazioqGHc06CiQvSJ9DEgV0ilwtc8h9mEUbdDJ1Bnj0WZ2r3uMVhTLFuSel+Iwe6TB0Bb+CHukImKiGss46ShJBMKe7gSRCwCIBI62591UEylXXqwR5U73SoQzU8pC8B1inH8jk7xmobTLZAQz7Ulx17Cqz0seeocit98sf5qD98gFg2iYg8V+WQHMePw1Mq9EZenzHqqCgVG1hyDVzWf4gB7WqptgPZPRkYahd+bWfgGueWao9GlgZVHVVU8WVGJHfmbOhlpN4G9ArTUWhOfjw13Nc8ySs3yoNGtm4gSFxaCz0Br8Talm3wMPNJYHpyDeQ1tzAtU0Eog+5ikN7tzxIsahNhV8kd0Mt98kfA8WbgYydKl7t6PfAIwEwJ2JA+/ZZcB06fBsKQ0G4j6ruP6bDO4wuqSUPantA2g9U8wMZby8MHf8VeKQOUvEQGNO3wZi+BaznLeCabwpAuD8PTJB4clZ5Su8OHr8ndHGc3gem1QGZ/POucfoLeKQezNHTWWjWN28A63p5nmu1g0ugTHEdSqEn9PPBpmWhtkdDjUAjTwK5bgeIDDz6NJDhH5dCs07diAOPbp+fUz1nMtA0dr5pKjWGFYWlQm1PhF8DenYnmNcR8NhOoIPHCkJz8MQg8M564KqzVaDIeWtAPrBi6IJbYEZ9Dljv28DO7y4KNWx4PARMrZkXqCreHJD3rxo8mwE3Aju3q3QwrpkX0ppjN1G9+kXpszKOWgUeex7IpSPLHPXlxaPONFfIsddAft26dVbeXFLuduLRbUCutBVtrjT2dCzpbIrdJ5JKwDgnHStjnDoWxulqe/44xV7KH6dsgKyjyN3+j7Ld6A42lxEgvy0EyDWptACxBDHhAaqIKBF+wSwYmdJHpUXm2KlM5amJ6GJkqv71QjGB+vB6hsRL8dDrtKxL4u9W4NgLXNtMILLRWRSagytVj1Akjo/IjQWuxaNrcy3aAs3po8h1e0h+L28RoFfbll0EGPbOQGdVnbAaMVzVQJFo3Bkw/dLB7Orz872bC3uNVa8+tjiufoUgT6pP+uS/W/ZsMeR410Q+/ULwiwy4J/glENVL8tfbej2Nxb1CJcWxs0lH9cmL0qego606x+JRa6HnZxuSa7bQC1kR1fMdQw6TIO+J3B+K1H7Lscuka/UKU2n9C9igBj5ULrcFAAAAAElFTkSuQmCC">
+                            </div>
+                            <div id="exchange-div">
+                                <div id="p1">
+                                    <p>Dex</p>
+                                    <p class="para1">Fast and secure decentralized digital assets</p>
+                                </div>
+                            
+                            </div>
+    
+                            <div id="exchange-arrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                            </div>
+    
+                        </div>
+
+                        <div id="na1">
+    
+                            <div id="exchange-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nM2XXWhbZRjHz0S928CJWpvkJGmzxW4NKNg5ZQNvFBQRdEwQsd6JThhjm6AOP+Y6tlYFO+kQmXiliIVd+NFd5ZzkvOc9DVnarVs/1nWta5d+ZFvn2pyT836kfeSkOem6ZGnapOIf/oSci/zyvDzP/32OIPzfBSCsI2H3D0yt5tan9d16zrXaVo6dhGu1bfazioqGHc06CiQvSJ9DEgV0ilwtc8h9mEUbdDJ1Bnj0WZ2r3uMVhTLFuSel+Iwe6TB0Bb+CHukImKiGss46ShJBMKe7gSRCwCIBI62591UEylXXqwR5U73SoQzU8pC8B1inH8jk7xmobTLZAQz7Ulx17Cqz0seeocit98sf5qD98gFg2iYg8V+WQHMePw1Mq9EZenzHqqCgVG1hyDVzWf4gB7WqptgPZPRkYahd+bWfgGueWao9GlgZVHVVU8WVGJHfmbOhlpN4G9ArTUWhOfjw13Nc8ySs3yoNGtm4gSFxaCz0Br8Talm3wMPNJYHpyDeQ1tzAtU0Eog+5ikN7tzxIsahNhV8kd0Mt98kfA8WbgYydKl7t6PfAIwEwJ2JA+/ZZcB06fBsKQ0G4j6ruP6bDO4wuqSUPantA2g9U8wMZby8MHf8VeKQOUvEQGNO3wZi+BaznLeCabwpAuD8PTJB4clZ5Su8OHr8ndHGc3gem1QGZ/POucfoLeKQezNHTWWjWN28A63p5nmu1g0ugTHEdSqEn9PPBpmWhtkdDjUAjTwK5bgeIDDz6NJDhH5dCs07diAOPbp+fUz1nMtA0dr5pKjWGFYWlQm1PhF8DenYnmNcR8NhOoIPHCkJz8MQg8M564KqzVaDIeWtAPrBi6IJbYEZ9Dljv28DO7y4KNWx4PARMrZkXqCreHJD3rxo8mwE3Aju3q3QwrpkX0ppjN1G9+kXpszKOWgUeex7IpSPLHPXlxaPONFfIsddAft26dVbeXFLuduLRbUCutBVtrjT2dCzpbIrdJ5JKwDgnHStjnDoWxulqe/44xV7KH6dsgKyjyN3+j7Ld6A42lxEgvy0EyDWptACxBDHhAaqIKBF+wSwYmdJHpUXm2KlM5amJ6GJkqv71QjGB+vB6hsRL8dDrtKxL4u9W4NgLXNtMILLRWRSagytVj1Akjo/IjQWuxaNrcy3aAs3po8h1e0h+L28RoFfbll0EGPbOQGdVnbAaMVzVQJFo3Bkw/dLB7Orz872bC3uNVa8+tjiufoUgT6pP+uS/W/ZsMeR410Q+/ULwiwy4J/glENVL8tfbej2Nxb1CJcWxs0lH9cmL0qego606x+JRa6HnZxuSa7bQC1kR1fMdQw6TIO+J3B+K1H7Lscuka/UKU2n9C9igBj5ULrcFAAAAAElFTkSuQmCC">
+                            </div>
+                            <div id="exchange-div">
+                                <div id="p1">
+                                    <p>Labs</p>
+                                    <p class="para1">Incubator for top blockchain projects</p>
+                                </div>
+                            
+                            </div>
+    
+                            <div id="exchange-arrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                            </div>
+    
+                        </div>
+
+                        <div id="na1">
+    
+                            <div id="exchange-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nM2XXWhbZRjHz0S928CJWpvkJGmzxW4NKNg5ZQNvFBQRdEwQsd6JThhjm6AOP+Y6tlYFO+kQmXiliIVd+NFd5ZzkvOc9DVnarVs/1nWta5d+ZFvn2pyT836kfeSkOem6ZGnapOIf/oSci/zyvDzP/32OIPzfBSCsI2H3D0yt5tan9d16zrXaVo6dhGu1bfazioqGHc06CiQvSJ9DEgV0ilwtc8h9mEUbdDJ1Bnj0WZ2r3uMVhTLFuSel+Iwe6TB0Bb+CHukImKiGss46ShJBMKe7gSRCwCIBI62591UEylXXqwR5U73SoQzU8pC8B1inH8jk7xmobTLZAQz7Ulx17Cqz0seeocit98sf5qD98gFg2iYg8V+WQHMePw1Mq9EZenzHqqCgVG1hyDVzWf4gB7WqptgPZPRkYahd+bWfgGueWao9GlgZVHVVU8WVGJHfmbOhlpN4G9ArTUWhOfjw13Nc8ySs3yoNGtm4gSFxaCz0Br8Talm3wMPNJYHpyDeQ1tzAtU0Eog+5ikN7tzxIsahNhV8kd0Mt98kfA8WbgYydKl7t6PfAIwEwJ2JA+/ZZcB06fBsKQ0G4j6ruP6bDO4wuqSUPantA2g9U8wMZby8MHf8VeKQOUvEQGNO3wZi+BaznLeCabwpAuD8PTJB4clZ5Su8OHr8ndHGc3gem1QGZ/POucfoLeKQezNHTWWjWN28A63p5nmu1g0ugTHEdSqEn9PPBpmWhtkdDjUAjTwK5bgeIDDz6NJDhH5dCs07diAOPbp+fUz1nMtA0dr5pKjWGFYWlQm1PhF8DenYnmNcR8NhOoIPHCkJz8MQg8M564KqzVaDIeWtAPrBi6IJbYEZ9Dljv28DO7y4KNWx4PARMrZkXqCreHJD3rxo8mwE3Aju3q3QwrpkX0ppjN1G9+kXpszKOWgUeex7IpSPLHPXlxaPONFfIsddAft26dVbeXFLuduLRbUCutBVtrjT2dCzpbIrdJ5JKwDgnHStjnDoWxulqe/44xV7KH6dsgKyjyN3+j7Ld6A42lxEgvy0EyDWptACxBDHhAaqIKBF+wSwYmdJHpUXm2KlM5amJ6GJkqv71QjGB+vB6hsRL8dDrtKxL4u9W4NgLXNtMILLRWRSagytVj1Akjo/IjQWuxaNrcy3aAs3po8h1e0h+L28RoFfbll0EGPbOQGdVnbAaMVzVQJFo3Bkw/dLB7Orz872bC3uNVa8+tjiufoUgT6pP+uS/W/ZsMeR410Q+/ULwiwy4J/glENVL8tfbej2Nxb1CJcWxs0lH9cmL0qego606x+JRa6HnZxuSa7bQC1kR1fMdQw6TIO+J3B+K1H7Lscuka/UKU2n9C9igBj5ULrcFAAAAAElFTkSuQmCC">
+                            </div>
+                            <div id="exchange-div">
+                                <div id="p1">
+                                    <p>Launch Pad</p>
+                                    <p class="para1">Token launch platform</p>
+                                </div>
+                            
+                            </div>
+    
+                            <div id="exchange-arrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                            </div>
+    
+                        </div>
+
+                        <div id="na1">
+    
+                            <div id="exchange-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nM2XXWhbZRjHz0S928CJWpvkJGmzxW4NKNg5ZQNvFBQRdEwQsd6JThhjm6AOP+Y6tlYFO+kQmXiliIVd+NFd5ZzkvOc9DVnarVs/1nWta5d+ZFvn2pyT836kfeSkOem6ZGnapOIf/oSci/zyvDzP/32OIPzfBSCsI2H3D0yt5tan9d16zrXaVo6dhGu1bfazioqGHc06CiQvSJ9DEgV0ilwtc8h9mEUbdDJ1Bnj0WZ2r3uMVhTLFuSel+Iwe6TB0Bb+CHukImKiGss46ShJBMKe7gSRCwCIBI62591UEylXXqwR5U73SoQzU8pC8B1inH8jk7xmobTLZAQz7Ulx17Cqz0seeocit98sf5qD98gFg2iYg8V+WQHMePw1Mq9EZenzHqqCgVG1hyDVzWf4gB7WqptgPZPRkYahd+bWfgGueWao9GlgZVHVVU8WVGJHfmbOhlpN4G9ArTUWhOfjw13Nc8ySs3yoNGtm4gSFxaCz0Br8Talm3wMPNJYHpyDeQ1tzAtU0Eog+5ikN7tzxIsahNhV8kd0Mt98kfA8WbgYydKl7t6PfAIwEwJ2JA+/ZZcB06fBsKQ0G4j6ruP6bDO4wuqSUPantA2g9U8wMZby8MHf8VeKQOUvEQGNO3wZi+BaznLeCabwpAuD8PTJB4clZ5Su8OHr8ndHGc3gem1QGZ/POucfoLeKQezNHTWWjWN28A63p5nmu1g0ugTHEdSqEn9PPBpmWhtkdDjUAjTwK5bgeIDDz6NJDhH5dCs07diAOPbp+fUz1nMtA0dr5pKjWGFYWlQm1PhF8DenYnmNcR8NhOoIPHCkJz8MQg8M564KqzVaDIeWtAPrBi6IJbYEZ9Dljv28DO7y4KNWx4PARMrZkXqCreHJD3rxo8mwE3Aju3q3QwrpkX0ppjN1G9+kXpszKOWgUeex7IpSPLHPXlxaPONFfIsddAft26dVbeXFLuduLRbUCutBVtrjT2dCzpbIrdJ5JKwDgnHStjnDoWxulqe/44xV7KH6dsgKyjyN3+j7Ld6A42lxEgvy0EyDWptACxBDHhAaqIKBF+wSwYmdJHpUXm2KlM5amJ6GJkqv71QjGB+vB6hsRL8dDrtKxL4u9W4NgLXNtMILLRWRSagytVj1Akjo/IjQWuxaNrcy3aAs3po8h1e0h+L28RoFfbll0EGPbOQGdVnbAaMVzVQJFo3Bkw/dLB7Orz872bC3uNVa8+tjiufoUgT6pP+uS/W/ZsMeR410Q+/ULwiwy4J/glENVL8tfbej2Nxb1CJcWxs0lH9cmL0qego606x+JRa6HnZxuSa7bQC1kR1fMdQw6TIO+J3B+K1H7Lscuka/UKU2n9C9igBj5ULrcFAAAAAElFTkSuQmCC">
+                            </div>
+                            <div id="exchange-div">
+                                <div id="p1">
+                                    <p>Research</p>
+                                    <p class="para1">Institutional-grade analysis and reports</p>
+                                </div>
+                            
+                            </div>
+    
+                            <div id="exchange-arrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                            </div>
+    
+                        </div>
+
+                        <div id="na1">
+    
+                            <div id="exchange-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nM2XXWhbZRjHz0S928CJWpvkJGmzxW4NKNg5ZQNvFBQRdEwQsd6JThhjm6AOP+Y6tlYFO+kQmXiliIVd+NFd5ZzkvOc9DVnarVs/1nWta5d+ZFvn2pyT836kfeSkOem6ZGnapOIf/oSci/zyvDzP/32OIPzfBSCsI2H3D0yt5tan9d16zrXaVo6dhGu1bfazioqGHc06CiQvSJ9DEgV0ilwtc8h9mEUbdDJ1Bnj0WZ2r3uMVhTLFuSel+Iwe6TB0Bb+CHukImKiGss46ShJBMKe7gSRCwCIBI62591UEylXXqwR5U73SoQzU8pC8B1inH8jk7xmobTLZAQz7Ulx17Cqz0seeocit98sf5qD98gFg2iYg8V+WQHMePw1Mq9EZenzHqqCgVG1hyDVzWf4gB7WqptgPZPRkYahd+bWfgGueWao9GlgZVHVVU8WVGJHfmbOhlpN4G9ArTUWhOfjw13Nc8ySs3yoNGtm4gSFxaCz0Br8Talm3wMPNJYHpyDeQ1tzAtU0Eog+5ikN7tzxIsahNhV8kd0Mt98kfA8WbgYydKl7t6PfAIwEwJ2JA+/ZZcB06fBsKQ0G4j6ruP6bDO4wuqSUPantA2g9U8wMZby8MHf8VeKQOUvEQGNO3wZi+BaznLeCabwpAuD8PTJB4clZ5Su8OHr8ndHGc3gem1QGZ/POucfoLeKQezNHTWWjWN28A63p5nmu1g0ugTHEdSqEn9PPBpmWhtkdDjUAjTwK5bgeIDDz6NJDhH5dCs07diAOPbp+fUz1nMtA0dr5pKjWGFYWlQm1PhF8DenYnmNcR8NhOoIPHCkJz8MQg8M564KqzVaDIeWtAPrBi6IJbYEZ9Dljv28DO7y4KNWx4PARMrZkXqCreHJD3rxo8mwE3Aju3q3QwrpkX0ppjN1G9+kXpszKOWgUeex7IpSPLHPXlxaPONFfIsddAft26dVbeXFLuduLRbUCutBVtrjT2dCzpbIrdJ5JKwDgnHStjnDoWxulqe/44xV7KH6dsgKyjyN3+j7Ld6A42lxEgvy0EyDWptACxBDHhAaqIKBF+wSwYmdJHpUXm2KlM5amJ6GJkqv71QjGB+vB6hsRL8dDrtKxL4u9W4NgLXNtMILLRWRSagytVj1Akjo/IjQWuxaNrcy3aAs3po8h1e0h+L28RoFfbll0EGPbOQGdVnbAaMVzVQJFo3Bkw/dLB7Orz872bC3uNVa8+tjiufoUgT6pP+uS/W/ZsMeR410Q+/ULwiwy4J/glENVL8tfbej2Nxb1CJcWxs0lH9cmL0qego606x+JRa6HnZxuSa7bQC1kR1fMdQw6TIO+J3B+K1H7Lscuka/UKU2n9C9igBj5ULrcFAAAAAElFTkSuQmCC">
+                            </div>
+                            <div id="exchange-div">
+                                <div id="p1">
+                                    <p>Trust Wallet</p>
+                                    <p class="para1">Binance's official crypto wallet</p>
+                                </div>
+                            
+                            </div>
+    
+                            <div id="exchange-arrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                    
+                </div>
         </div>
     </div>
     
