@@ -75,7 +75,7 @@
         justify-content: center;
         align-items: center;
         padding: 15px;
-        /* text-align: center; */
+        text-align: center;
         -webkit-box-align: center;
 
     }
@@ -124,14 +124,17 @@
 
     #na1{
         display: flex;
-        justify-content: center;
+        justify-content: first baseline;
         align-items: center;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        padding-left: 19px;
+        padding-right: 19px;
         border-radius: 10px;
         /* margin-top: 10px; */
-        margin-left: 25px;
-        width: max-content;
+        /* margin-left: 25px; */
+        /* width: max-content; */
+        width: 315px;
     }
 
     #nav1-grid{
@@ -148,12 +151,13 @@
     #exchange-div{
         /* display: flex; */
         /* width: max-content; */
-        
+        /* margin: -30px; */
 
     }
 
     #p1{
         margin-left: 20px;
+        margin-right: 5rem;
     }
     
     .para1{
@@ -171,7 +175,33 @@
     }
 
     .arrow{
-        display: none;
+        /* position: relative; */
+        display: inline-flex;
+    }
+
+    /* .arrow:hover{
+        display: inline;
+    } */
+
+    #na1 .arrow{
+        visibility: hidden;
+    }
+
+    #na1:hover .arrow{
+        visibility: visible;
+        /* transition: 1.6ms; */
+        transition: 10s;
+    }
+    
+    .css-17hpqak{
+        background-color:rgb(255, 199, 45);
+        display: inline;
+        font-size: 12px;
+        padding: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
     }
 
 </style>
@@ -230,7 +260,7 @@
                             </div>
     
                             <div id="exchange-arrow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
                             </div>
     
                         </div>
@@ -249,7 +279,7 @@
                             </div>
     
                             <div id="exchange-arrow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
                             </div>
     
                         </div>
@@ -268,7 +298,7 @@
                             </div>
     
                             <div id="exchange-arrow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
                             </div>
     
                         </div>
@@ -287,7 +317,7 @@
                             </div>
     
                             <div id="exchange-arrow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
                             </div>
     
                         </div>
@@ -306,7 +336,7 @@
                             </div>
     
                             <div id="exchange-arrow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
                             </div>
     
                         </div>
@@ -319,13 +349,13 @@
                             <div id="exchange-div">
                                 <div id="p1">
                                     <p>Dex</p>
-                                    <p class="para1">Fast and secure decentralized digital assets</p>
+                                    <p class="para1">Fast and secure decentralized digital<br>assets</p>
                                 </div>
                             
                             </div>
     
                             <div id="exchange-arrow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
                             </div>
     
                         </div>
@@ -344,7 +374,7 @@
                             </div>
     
                             <div id="exchange-arrow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
                             </div>
     
                         </div>
@@ -363,7 +393,7 @@
                             </div>
     
                             <div id="exchange-arrow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
                             </div>
     
                         </div>
@@ -382,7 +412,7 @@
                             </div>
     
                             <div id="exchange-arrow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
                             </div>
     
                         </div>
@@ -401,14 +431,31 @@
                             </div>
     
                             <div id="exchange-arrow">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
+                                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2UsQ2AUAhEcQphG7dxHe3cB7aCyA+NlbHRSzT+l1zLCyEcUeeTZNJQgQ135dVNNojEdZxcZQ+TLBFEEsrzIUFtEv+UhEnejV9J4ILX3SH68DPgVZFVdsYL7LHgdd2hp2kywf5VgLe1vAAAAABJRU5ErkJggg==">
                             </div>
     
                         </div>
+                        
                     </div>
                     
                     
                 </div>
+
+                
+        </div>
+
+        <div id="buy-crypto">
+            <div id="buy-crypto1">
+                <a href="" target="_blank">
+                    Buy Crypto
+                </a>
+            </div>
+
+            <div data-bn-type="text" class="css-17hpqak">
+                EUR
+            </div>
+
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="lock css-1b8hgjl"><use xlink:href="#icon-h-dropdown-arrow"></use></svg> -->
         </div>
     </div>
     
