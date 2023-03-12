@@ -6,231 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binance Clone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/image/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-
-    *{
-        margin: 0;
-        font-family: Arial;
-    }
-    body{
-        margin: 0;
-    }
-    #top-bar{
-        height: 56px;
-        background-color: rgb(43, 49, 57);
-        display: block;
-    
-    }
-
-    #text1{
-        color: white;
-        font-size: 15px;
-        font-family: Golos Text, Arial;
-        line-height: 24px;
-    }
-
-    #text2{
-        color: rgb(201, 148, 0);
-        font-size: 15px;
-        font-family: Golos Text, Arial;
-        line-height: 24px;
-    }
-    
-    #text3{
-        color: white;
-        font-size: 15px;
-        font-family: Golos Text, Arial;
-        line-height: 24px;
-    }
-
-    #div-button{
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    #nav-continue-button{
-        background-color: #474D57;
-        border: none;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 14px;
-        padding-right: 14px;
-        border-radius: 5px;
-        color: white;
-    
-        
-    }
-
-    .nav-svg{
-        height: 20px;
-        padding-top: 3px;
-    }
-
-    #nav-text-div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        text-align: center;
-        -webkit-box-align: center;
-
-    }
-
-    .css-4fx19t{
-        height: 24px;
-    }
-
-    #app-icon{
-        height: 24px;
-    }
-
-    #nav-bar{
-        display: flex;
-    }
-
-    #app-dropdown {
-    position: relative;
-    display: inline-block;
-    }
-
-    .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 400px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    }
-
-    .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    }
-
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: #ffffff;}
-
-    /* Show the dropdown menu on hover */
-    #app-dropdown:hover .dropdown-content {display: block;}
-
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-    #app-dropdown:hover #app-icon {background-color: rgb(201, 148, 0);}
-
-    #na1{
-        display: flex;
-        justify-content: first baseline;
-        align-items: center;
-        padding-top: 19px;
-        padding-bottom: 19px;
-        padding-left: 19px;
-        padding-right: 19px;
-        border-radius: 10px;
-        /* margin-top: 10px; */
-        /* margin-left: 25px; */
-        /* width: max-content; */
-        width: 315px;
-    }
-
-    #nav1-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin: 10px;
-    }
-
-    #na1:hover{
-        background-color: #dddddd;
-        display: ;
-    }
-
-    #exchange-div{
-        /* display: flex; */
-        /* width: max-content; */
-        /* margin: -30px; */
-
-    }
-
-    #p1{
-        margin-left: 20px;
-        margin-right: 5rem;
-    }
-    
-    .para1{
-        font-size: 12px;
-        font-family: Arial;
-    }
-
-    #exchange-icon{
-        margin-top: 3px;
-    }
-
-    #exchange-arrow{
-        margin-left: 50px;
-        margin-top: 10px;
-    }
-
-    .arrow{
-        /* position: relative; */
-        display: inline-flex;
-    }
-
-    /* .arrow:hover{
-        display: inline;
-    } */
-
-    #na1 .arrow{
-        visibility: hidden;
-    }
-
-    #na1:hover .arrow{
-        visibility: visible;
-        /* transition: 1.6ms; */
-        transition: 10s;
-    }
-    
-    .css-17hpqak{
-        background-color:rgb(255, 199, 45);
-        display: inline;
-        font-size: 12px;
-        padding: 3px;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
-    }
-
-</style>
 <body>
     
 <div id="parent">
     <div id="top-bar">
 
-        <div id="nav-text-div">
+        <div id="top-bar-text-container">
             
-            <div id="span-div">
-                <span id="text1">
+            <div id="top-bar-writeup-container">
+                <span id="writeup-1">
                     To see content specific to your location, we suggest
                 </span>
-                <span id="text2">
+                <span id="writeup-2">
                     Nigeria
                 </span>
         
-                <span id="text3">
+                <span id="writeup-3">
                     as your preferred country/region.
                 </span>
             </div>
 
-            <div id="div-button">
-                <input id="nav-continue-button" type="button" id="nav-button" value="Continue">
+            <div id="top-bar-button-container">
+                <input id="top-bar-button" type="button" id="nav-button" value="Continue">
             </div>
 
-            <div id="svg-div">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="nav-svg"><path fill="#858585" d="M13.4 12l6.6 6.6-1.4 1.4-6.6-6.6L5.4 20 4 18.6l6.6-6.6L4 5.4 5.4 4l6.6 6.6L18.6 4 20 5.4 13.4 12z" fill="currentColor"></path></svg>
+            <div id="top-bar-cancel-icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="top-bar-cancel-icon"><path fill="#858585" d="M13.4 12l6.6 6.6-1.4 1.4-6.6-6.6L5.4 20 4 18.6l6.6-6.6L4 5.4 5.4 4l6.6 6.6L18.6 4 20 5.4 13.4 12z" fill="currentColor"></path></svg>
             </div>
         </div>
         
@@ -243,7 +49,8 @@
     
         <div id="app-dropdown">
             <img id="app-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABj0lEQVR4nO3cUWrbQBQFUH9J9+2h+QzdezDdWSHxBlyUFEqdOPFohOzI58B8mifmzUjy+OLdDgAAAAA+keQh47iv5FDJ8YtxyDj+Gobh59xJzcbrzbm43xdc2H/j9TNVP9Tr9HdlHGeNcXxSr9OF2/LceFGvU8fkvw71OmlAFl1gGnDlBdbMDogG1IaeOc3sgGhA2QFeQ+uKt6DZX8SSPKvXaTp4mt2Acdyr12k69Zt7GDcMw6N6C5hONaeDtels55Lzn2nlz5n8e6kHAAAAAHeb1Yxs6P1kUZvJhmbR7Gsz2dB8+tvAGg049gz1OmlAFl1gGnDlBdbMDogG1IaeOc3sgGhA2QFeQ+uKtyDZ0CyXfW0mG5pFs6/NZENz9jButXji1rOaJRsKAAAAwK3YelYzsqH/yIaekA3N+d0nG5p3vw3sbjz72kwsJWIpJZYillKScRFNXCM7WStnNWVDT2jAnU1IrVyv2dYnpL5BA2RD8/Hky4bm+/1PaTPZ0JybfNnQepsM2VAAAAAAdrfoD66TUvAmDYrPAAAAAElFTkSuQmCC">
-                <div class="dropdown-content">
+            
+            <div class="dropdown-content">
 
                     <div id="nav1-grid">
                         <div id="na1">
@@ -444,6 +251,8 @@
                 
         </div>
 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="13px" weight="13px" ><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="#738878" class="triangle-down" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+
         <div id="buy-crypto">
             <div id="buy-crypto1">
                 <a href="" target="_blank">
@@ -454,8 +263,7 @@
             <div data-bn-type="text" class="css-17hpqak">
                 EUR
             </div>
-
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="lock css-1b8hgjl"><use xlink:href="#icon-h-dropdown-arrow"></use></svg> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="13px" weight="13px" ><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="#738878" class="triangle-down" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
         </div>
     </div>
     
